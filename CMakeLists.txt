@@ -1,5 +1,6 @@
 add_library(pac
         pac.c
+        queue.c
 )
 
 target_include_directories(pac
