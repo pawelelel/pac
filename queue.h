@@ -6,7 +6,11 @@
 #define PCL_QUEUE_H
 
 #include <windows.h>
-
+/*
+#ifdef __cplusplus
+extern "C" {
+#endif
+*/
 // Queue
 struct Queue {
 	struct Node* head;
@@ -22,5 +26,9 @@ void enqueue(struct Queue *queue, void* value);
 void* dequeue(struct Queue *queue);
 
 void* peek(struct Queue *queue);
-
+/*
+#ifdef __cplusplus
+}
+#endif
+*/
 #endif //PCL_QUEUE_H
